@@ -1,0 +1,23 @@
+nav {
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav a {
+    color: #555;
+    font-size: 18px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    background-color: #555;
+    color: #fff;
+    border-radius: 5px;
+}
+
+nav a:last-child {
+    margin-right: 0;
+}

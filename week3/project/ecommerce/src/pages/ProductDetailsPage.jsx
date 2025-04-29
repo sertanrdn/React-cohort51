@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import '../assets/ProductDetailsPage.css';
+import { HeartButton } from "../components/HeartButton";
 
 export function ProductDetailsPage() {
     const { id } = useParams();
@@ -44,11 +45,15 @@ export function ProductDetailsPage() {
                             <p>{product.description}</p>
                         </div>
                     </div>
-                    <img 
-                        className="product-image"
-                        src={product.image} 
-                        alt={product.title} 
-                    />
+                    <div className="product-image-wrapper">
+                        <img 
+                            className="product-image"
+                            src={product.image} 
+                            alt={product.title} 
+                        />
+                        <HeartButton id={product.id} />
+                    </div>
+                    
                 </>
             )}
         </div>

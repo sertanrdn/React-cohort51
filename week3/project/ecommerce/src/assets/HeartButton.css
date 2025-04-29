@@ -1,0 +1,27 @@
+.heart-icon {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.heart-icon img {
+    width: 20px; 
+    height: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.heart-icon:hover img {
+    transform: scale(1.2);
+}
+
+.heart-icon:focus {
+    outline: none;
+}

@@ -6,6 +6,7 @@ import { HeartButton } from "./HeartButton";
 export function ProductItem ({ product }) {
     return (
         <div className="product-item">
+            <HeartButton id={product.id} />
             <Link to={`/product/${product.id}`} className="product-link">
                 <img 
                 src={product.image} 
@@ -14,7 +15,6 @@ export function ProductItem ({ product }) {
                 />
                 <h3>{product.title}</h3>  
             </Link>
-            <HeartButton id={product.id} />
         </div>
     );
 }
