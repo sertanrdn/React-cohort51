@@ -12,10 +12,10 @@ export async function fetchCategories() {
     }
 }
 
-export async function fetchProducts(category = '') {
+export async function fetchProducts(productId = '') {
     try {
-        const url = category 
-            ? `https://fakestoreapi.com/products/category/${category}` 
+        const url = productId 
+            ? `https://fakestoreapi.com/products/category/${productId}` 
             : 'https://fakestoreapi.com/products';
 
         const res = await fetch(url);
